@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql} from 'gatsby'
 
 export const query = graphql `
-  query ($id: String - "") {
+  query ($id: String = "") {
     contentfulCity(id: {eq: $id}) {
       name
       description
